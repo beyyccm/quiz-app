@@ -9,7 +9,7 @@ Proje, verilen isterler doğrultusunda kullanıcıya zaman sınırlı sorular su
 > Netlify üzerinden yayınlanmaktadır.
 
 
-👉 [Canlı Siteyi Görüntüle](https://unrivaled-croquembouche-1d7428.netlify.app)
+👉 [Canlı Siteyi Görüntüle](https://[unrivaled-croquembouche-1d7428.netlify.app](https://stellular-nasturtium-28fbe3.netlify.app/))
 
 
 ---
