@@ -1,0 +1,67 @@
+/* Genel sayfa stili */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4; /* Gözü yormayan açık gri arka plan */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Proje isterlerinde belirtilen 1400px genişlik sınırlaması */
+.container {
+  max-width: 1400px; /* İçeriğin en fazla 1400px genişlikte olmasını sağlar */
+  width: 100%;       /* Küçük ekranlarda tam genişlik kaplar */
+  margin: 0 auto;    /* Sayfayı yatayda ortalar */
+  padding: 20px;
+}
+
+/* Giriş, Soru ve Sonuç kartlarının ortak tasarımı */
+.quiz-card, .intro-card, .result-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Hafif gölge ile derinlik algısı */
+  text-align: center;
+}
+
+/* İlk 4 saniye şıkları gizlemek için kullanılan kritik sınıf */
+.hidden {
+  display: none; /* Elementi DOM'da tutar ama tamamen gizler */
+}
+
+/* Şık butonlarının yerleşimi */
+.options-container button {
+  display: block;    /* Butonları alt alta dizer */
+  margin: 10px 0;
+  padding: 15px;
+  width: 100%;       /* Butonların kart genişliğini doldurmasını sağlar */
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background 0.3s; /* Hover efekti için yumuşak geçiş */
+}
+
+.options-container button:hover:not([disabled]) {
+  background: #e9ecef; /* Fare ile üzerine gelindiğinde renk değişimi */
+}
+
+/* Soru görsellerinin duyarlı (responsive) ayarı */
+.question-img {
+  max-width: 100%;    /* Resmin kart dışına taşmasını önler */
+  height: auto;
+  max-height: 400px;  /* Resmin çok dikey olup sayfayı kaydırmasını engeller */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;  /* Resmi bozmadan alanı doldurmasını sağlar */
+}
+
+/* Geri sayım çubuğu (Timer Bar) */
+.timer-bar {
+  height: 8px;
+  background: #28a745; /* Yeşil renkli ilerleme çubuğu */
+  margin-bottom: 20px;
+  border-radius: 4px;
+  transition: width 1s linear; /* Saniye saniye kısalırken akıcı görünmesini sağlar */
+}
